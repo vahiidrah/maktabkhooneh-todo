@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.main-active{
+    display: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-completed{
+    display: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.all-btn{
+    border: 2px solid #444 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.main-all[data-mode="all"]{
+    display: block;
 }
 
-.App-link {
-  color: #61dafb;
+.main-active[data-mode="all"]{
+    display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-completed[data-mode="all"]{
+    display: none;
+}
+
+.all-btn[data-mode="all"]{
+    border: 2px solid #444 !important;
+}
+
+.active-btn[data-mode="all"]{
+    border: none !important
+}
+
+.complete-btn[data-mode="all"]{
+    border: none !important
+}
+
+
+
+.main-all[data-mode="active"]{
+    display: none;
+}
+
+.main-active[data-mode="active"]{
+    display: block;
+}
+
+.main-completed[data-mode="active"]{
+    display: none;
+}
+
+.all-btn[data-mode="active"]{
+    border: none !important;
+}
+
+.active-btn[data-mode="active"]{
+    border: 2px solid #444 !important;
+}
+
+.complete-btn[data-mode="active"]{
+    border: none !important
+}
+
+
+
+
+.main-all[data-mode="completed"]{
+    display: none;
+}
+
+.main-active[data-mode="completed"]{
+    display: none;
+}
+
+.main-completed[data-mode="completed"]{
+    display: block;
+}
+
+.all-btn[data-mode="completed"]{
+    border: none !important;
+}
+
+.active-btn[data-mode="completed"]{
+    border: none !important;
+}
+
+.complete-btn[data-mode="completed"]{
+    border: 2px solid #444 !important;
 }
